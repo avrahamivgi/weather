@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How The Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>מזג האוויר</h1>
+    <hr>
+
+    <caption>
+        <h2>ערים נבחרות</h2>
+        <h3>ירושלים</h3>
+        <p id = "jeru"></p>
+        <div class="container">
+        <img id = "jeruIcon" src="" alt="icon">
+        </div>
+        
+        <h3>תל אביב</h3>
+        <p id = "tel-aviv"></p>
+        <div class="container"><img id = "tel-avivIcon" src="" alt="icon"></div>
+
+        <h3>ניו יורק</h3>
+        <p id = "new-york"></p>
+        <div class="container"><img id = "new-yorkIcon" src="" alt="icon"></div>
+        <hr>
+    </caption>
+
+    <caption>
+        <h2>בחר עיר</h2>
+        <div class="container">
+            <button onclick="sendingUserInput()">שלח</button>
+            <input type="text" id = "cityInput"></input>
+        </div>
+
+        <p id = "userOutput"></p>
+        <div class="container">
+        <img id = "userOutputIcon" src="">
+        <button class="hidden" onclick="hideButton()" id ="recommendedButton">הוספה למועדפים</button>
+        </div>
+    </caption>
+    <hr>
+    <caption>
+        <h2>ערים מועדפות</h2>
+
+    </caption>
+</body>
+</html>
